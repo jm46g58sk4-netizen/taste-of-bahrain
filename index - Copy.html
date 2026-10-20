@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of Bahrain</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Taste of Bahrain</h1>
+        <p><em>Sweet Moments, Freshly Baked!</em></p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#menu">Our Menu</a> |
+        <a href="#about">About Us</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Taste of Bahrain</h2>
+        <p>Discover delicious cakes, cupcakes, cookies, and traditional sweets.</p>
+    </section>
+
+    
+<section id="menu">
+    <h2>Our Menu</h2>
+
+    <div class="product">
+        <h3>Chocolate Cake</h3>
+       <img src="C:\Users\user\OneDrive\Desktop\TasteofBahrain\images\chocolate-cake.jpg.jpg"
+     alt="Chocolate Cake" width="250">
+        <p>Rich chocolate cake topped with smooth chocolate ganache.</p>
+        <p class="price">Price: BD 4.000</p>
+<button onclick="orderNow('Chocolate Cake')">Order Now</button>
+    </div>
+<div class="product">
+    <h3>Pistachio Cake</h3>
+    <img src="C:\Users\user\OneDrive\Desktop\TasteofBahrain\images\Pistachio Cake.jpg"
+         alt="Pistachio Cake" width="250">
+    <p>Delicious pistachio cake with creamy pistachio frosting.</p>
+    <p class="price">Price: BD 6.000</p>
+<button onclick="orderNow('Pistachio Cake')">Order Now</button>
+</div>
+    <div class="product">
+        <h3>Chocolate Raspberry Muffin</h3>
+        <img src="C:\Users\user\OneDrive\Desktop\TasteofBahrain\images\chocolate-raspberry-muffin.jpg.jpg"
+             alt="Chocolate Raspberry Muffin" width="250">
+        <p>Soft chocolate muffin with delicious raspberries.</p>
+        <p class="price">Price: BD 1.500</p>
+<button onclick="orderNow('Chocolate Raspberry Muffin')">Order Now</button>
+    </div>
+
+    <div class="product">
+        <h3>Blackberry Cheesecake</h3>
+        <img src="C:\Users\user\OneDrive\Desktop\TasteofBahrain\images\blackberry-cheesecake.jpg.jpg"
+             alt="Blackberry Cheesecake" width="250">
+        <p>Creamy cheesecake topped with  blackberries.</p>
+        <p class="price">Price: BD 3.000</p>
+<button onclick="orderNow('Blackberry Cheesecake')">Order Now</button>
+    </div>
+
+</section>
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Taste of Bahrain is a modern bakery based in Bahrain,
+        offering a delicious selection of cakes and desserts.
+        Our menu includes Chocolate Cake, Chocolate Raspberry Muffin,
+        Blackberry Cheesecake, and Pistachio Cake.
+        We aim to make every occasion sweeter with delicious treats
+        and a beautiful presentation.
+    </p>
+</section>
+
+    <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have a question? Contact us below!</p>
+
+    <form onsubmit="sendMessage(event)">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+<p style="text-align: center;">
+    <a href="#home">Back to Top ↑</a>
+</p>
+    <footer>
+        <p>&copy; 2026 Taste of Bahrain. All rights reserved.</p>
+    </footer>
+<script>
+function orderNow(productName) {
+    alert("Thank you for choosing " + productName + "!");
+}
+function sendMessage(event) {
+    event.preventDefault();
+    alert("Thank you! Your message has been received.");
+}
+</script>
+</body>
+</html>
